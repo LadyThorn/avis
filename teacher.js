@@ -56,19 +56,26 @@ document.addEventListener("DOMContentLoaded", () => {
           <tr>
             <td>Jane Tabiñas</td>
             <td>S001</td>
-            <td><button class="viewQRButton" onclick="redirectToGenerate('John Doe', 'S001')">View QR Code</button></td> <!-- Adding a button to each row -->
+            <td><button class="viewQRButton">View QR Code</button></td> <!-- Adding a button to each row -->
           </tr>
           <tr>
             <td>Jane Smith</td>
             <td>S002</td>
-            <td><button class="viewQRButton" onclick="redirectToGenerate('Jane Smith', 'S002')">View QR Code</button></td> <!-- Adding a button to each row -->
+            <td><button class="viewQRButton">View QR Code</button></td> <!-- Adding a button to each row -->
           </tr>
           <!-- Add more fake student rows here -->
         </tbody>
       </table>
     `;
-    // Populate the students table dynamically with rows of student data
-    // ...
+
+    // Add event listeners to the newly created buttons
+    document.querySelectorAll(".viewQRButton").forEach(button => {
+      button.addEventListener("click", () => {
+        const name = button.parentElement.parentElement.children[0].textContent;
+        const number = button.parentElement.parentElement.children[1].textContent;
+        redirectToGenerate(name, number);
+      });
+    });
   }
 
   // Function to redirect to generate.html with student details as URL parameters
