@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="generate.css">
+  <script src="qrcode.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="qr-form">
+      <div class="form-group">
+        <label for="namesDropdown">Select Name:</label>
+        <select id="namesDropdown" onchange="updateStudentNumber()">
+          <option value="Jane Tabinas">Jane Tabinas (s001)</option>
+          <option value="Elijah Montefalco">Elijah Montefalco (s003)</option>
+          <!-- Add more names as options -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="studentNumber">Student Number:</label>
+        <span id="studentNumber"></span>
+      </div>
+      <div class="form-group">
+        <label for="subjectsDropdown">Select Subject:</label>
+        <select id="subjectsDropdown">
+          <option value="Calculus">Calculus</option>
+          <option value="Object Oriented Programming">Object Oriented Programming</option>
+        </select>
+      </div>
+      <button onclick="generateQRCode()">Generate QR Code</button>
+      <div id="qrcode"></div>
+    </div>
+  </div>
+
+  
+  <script src="generate.js"></script>
+</body>
+</html>

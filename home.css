@@ -1,0 +1,61 @@
+/* CSS styles for the student homepage */
+
+/* Basic styles, adjust as needed */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background: linear-gradient(135deg, #79e0ee, #ffb2bc, #f0e5ff); /* Gradient: Blue -> Pink -> Violet */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #79e0ee, #ffb2bc, #f0e5ff); /* Gradient: Blue -> Pink -> Violet */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex-direction: column; /* Adjust the main axis to be vertical */
+}
+
+.card {
+  width: 100%;
+  background-color: #ffffff; /* White */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.card:hover {
+  background: linear-gradient(135deg, #79e0ee, #ffb2bc, #f0e5ff); /* Gradient on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); /* Slightly bigger on hover */
+}
+
+.student-classes button,
+#send-excuse-btn {
+  margin: 5px;
+  padding: 8px 15px;
+  background-color: #ffb2bc; /* Pastel Pink */
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.student-classes button:hover,
+#send-excuse-btn:hover {
+  background-color: #ff8096; /* Darker Pink on hover */
+}

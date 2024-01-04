@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher's Portal</title>
+  <link rel="stylesheet" href="teacher.css">
+</head>
+<body>
+  <header>
+    <!-- Header content -->
+  </header>
+
+  <main class="container">
+    <section class="teacher-info">
+      <h1>Welcome, Teacher</h1>
+      <p>ID: T001</p>
+      <p>Department: Computer Science</p>
+      <p>Email: teacher@email.com</p>
+    </section>
+
+    <section class="dropdown-container">
+      <div class="dropdown">
+        <button class="dropbtn" id="dropdownButton">Options</button>
+        <div class="dropdown-content" id="dropdownContent">
+          <button class="option-button" id="classesButton">Classes I Teach</button>
+          <button class="option-button" id="scanCodeButton">Scan QR Code</button>
+          <button class="option-button" id="studentsListButton">List of Students</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="teacher-dashboard" id="classInfoSection">
+      <!-- Content displayed based on selected option -->
+    </section>
+  </main>
+
+  <script src="teacher.js" defer></script>
+  <script src="instascan.min.js"></script>
+</body>
+</html>

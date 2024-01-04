@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Homepage - AVIS Attendance App</title>
+  <link rel="stylesheet" href="student.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome To Your Homepage</h1>
+  </header>
+
+  <main class="container">
+    <section class="student-dashboard">
+      <!-- First Box: Send Excuse Letter -->
+      <section class="send-excuse-section">
+        <h2>Send Excuse Letter</h2>
+        
+        <!-- Dropdown to choose the teacher for regular email -->
+        <label for="excuse-email-teacher-select">Select Teacher:</label>
+        <select id="excuse-email-teacher-select">
+          <option value="teacher1@example.com">Teacher 1</option>
+          <option value="teacher2@example.com">Teacher 2</option>
+          <!-- Add more options for additional teachers -->
+        </select>
+        <button id="send-excuse-btn">Send Excuse</button>
+      </section>
+
+      <!-- Second Box: Attendance -->
+      <section class="attendance-section">
+        <h2>Attendance</h2>
+        <div class="student-info">
+          <!-- Display Student Information -->
+        </div>
+        <div class="student-classes">
+          <!-- Display Student's Classes -->
+        </div>
+        <div class="attendance-sheet hidden">
+          <!-- Display Attendance Sheet for Selected Class -->
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="student.js"></script>
+</body>
+</html>

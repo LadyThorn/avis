@@ -1,0 +1,158 @@
+/* Reset and defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #79e0ee, #ffb2bc, #f0e5ff); /* Gradient: Blue -> Pink -> Violet */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Main container */
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+/* Teacher info section */
+.teacher-info {
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #79e0ee, #ffb2bc, #f0e5ff); /* Gradient: Blue -> Pink -> Violet */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.teacher-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.teacher-info p {
+  margin-bottom: 5px;
+}
+
+/* Dropdown styles */
+.dropdown {
+  margin-bottom: 20px; /* Add space below dropdown */
+}
+
+.dropbtn {
+  background-color: #ffb2bc; /* Pastel Pink */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative; /* Change to relative positioning */
+  background-color: #ffffff; /* White */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.option-button {
+  width: 100%;
+  text-align: left;
+  padding: 10px 20px;
+  background-color: #f4f4f4; /* Light gray */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.option-button:hover {
+  background-color: #ddd; /* Light gray on hover */
+}
+
+/* Class card styles */
+.class-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.class-card {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #79e0ee, #ffb2bc, #f0e5ff); /* Gradient: Blue -> Pink -> Violet */
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.class-card:hover {
+  background: linear-gradient(135deg, #ffb2bc, #79e0ee, #f0e5ff); /* Reversed gradient */
+  color: white;
+  cursor: pointer;
+}
+
+/* Student table styles */
+.student-table {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #79e0ee, #ffb2bc, #f0e5ff); /* Gradient: Blue -> Pink -> Violet */
+}
+
+.student-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-table th,
+.student-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.student-table th {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  font-weight: bold;
+}
+
+.student-table td {
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+}
+
+.student-table tr:nth-child(even) td {
+  background-color: rgba(255, 255, 255, 0.3); /* Lighter semi-transparent white */
+}
+
+.qr-code-link {
+  text-decoration: none;
+  color: #ffb2bc; /* Pastel Pink */
+}
+
+.qr-code-link:hover {
+  text-decoration: underline;
+  color: #ff8096; /* Darker pink on hover */
+}

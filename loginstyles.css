@@ -1,0 +1,62 @@
+/* Basic styles, adjust as needed */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* White background */
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background: linear-gradient(135deg, #79e0ee, #ffb2bc, #f0e5ff); /* Gradient: Blue -> Pink -> Violet */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #79e0ee, #ffb2bc, #f0e5ff); /* Gradient: Blue -> Pink -> Violet */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.login-section {
+  background-color: #ffffff; /* White */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffb2bc; /* Pastel Pink */
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff8096; /* Darker Pink on hover */
+}
+
+.hidden {
+  display: none;
+}
